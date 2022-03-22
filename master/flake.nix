@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-weave-master.flake = false;
+  inputs.src-weave-master.ref   = "refs/heads/master";
   inputs.src-weave-master.owner = "mratsim";
-  inputs.src-weave-master.ref   = "master";
   inputs.src-weave-master.repo  = "weave";
   inputs.src-weave-master.type  = "github";
   
