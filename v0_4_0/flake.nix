@@ -1,5 +1,5 @@
 {
-  description = ''a state-of-the-art multithreading runtime'';
+  description = ''a state-of-the-art ùultithreading runtime'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-weave-v0_4_0.flake = false;
   inputs.src-weave-v0_4_0.owner = "mratsim";
-  inputs.src-weave-v0_4_0.ref   = "refs/tags/v0.4.0";
+  inputs.src-weave-v0_4_0.ref   = "v0_4_0";
   inputs.src-weave-v0_4_0.repo  = "weave";
   inputs.src-weave-v0_4_0.type  = "github";
   
   inputs."synthesis".owner = "nim-nix-pkgs";
   inputs."synthesis".ref   = "master";
   inputs."synthesis".repo  = "synthesis";
+  inputs."synthesis".dir   = "v0_2_0";
   inputs."synthesis".type  = "github";
   inputs."synthesis".inputs.nixpkgs.follows = "nixpkgs";
   inputs."synthesis".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
